@@ -73,7 +73,7 @@ def handle_text_message(event):
     user_messages[event.source.user_id]  = event.message.text
 
 
-    text                        = "Welcome to AIFT-CV model demo, please type following number \n to select the model \n 1.face_blur \n 2.chestXray \n 3.Violent \n 4.NFSW \n 5.Super_resolution \n 6.Handwritten"
+    text                        = "Welcome to AIFT-CV model demo, please type following number \n to select the model \n 1.face_blur \n 2.chestXray \n 3.Violent \n 4.NFSW \n 5.Super_resolution \n 6.Handwritten \n 7.Person Detection"
 
          
 
@@ -129,6 +129,9 @@ def handle_image_message(event):
          for _result in result['objects']:
               result_text   = result_text+_result['class']
          send_message(event, result_text)
+    elif previous_text == '7':
+         result             = person_detection(AIFORTHAI_APIKEY, 'image.jpg')
+         send_image(event, result)
     else:
          send_message(event, 'Please type the number first')
 
