@@ -32,9 +32,9 @@ router = APIRouter(
             tags=['']
          )
 
-AIFORTHAI_APIKEY            = 'Please enter your API key'
-LINE_CHANNEL_ACCESS_TOKEN   = 'Plese enter Line Acesstoken'
-LINE_CHANNEL_SECRET         = 'Please enter channel secret'
+AIFORTHAI_APIKEY            = 'Kdx3uanDJBM1pl4kIOMKOxsfGs1sqg0V'
+LINE_CHANNEL_ACCESS_TOKEN   = 'Yv/bXhNLKbd2sup0uTJiAGOHLkfg9zB+1JBPBpXVkD5ws+ybGxlh1K1UJ6IzGOIWNuytoBcPis+g2hN+Sb/9LPMgGyre+BwHejdC+7LszQFrKErkMVM/8iWPR+varObCCANPx+D5JRwShKqTV09otwdB04t89/1O/w1cDnyilFU='
+LINE_CHANNEL_SECRET         = '44b249960575dabcfd09dd610ef45ddc'
 
 setting.set_api_key(AIFORTHAI_APIKEY)
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN) #CHANNEL_ACCESS_TOKEN
